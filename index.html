@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Sākums</title>
+</head>
+
+<body class="dark:bg-gray-900 font-roboto">
+  <nav class="px-4 xl:px-36 dark:bg-gray-700  flex h-auto xl:h-16 items-center justify-between relative z-10">
+    <div class="flex xl:basis-1/4">
+      <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
+      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" />
+    </div>
+    <div class="xl:hidden flex justify-center py-2 flex-1 mx-4 relative mr-12">
+      <button id="mobileMenuButton"
+        class="w-full px-4 py-2 text-black dark:text-slate-300 rounded dark:text-gray-700 dark:hover:text-gray-700 dark:hover:bg-slate-300 dark:hover:bg-slate-300 hover:bg-gray-200">
+        ☰ SĀKUMS 
+      </button>
+      <div id="mobileMenu"
+        class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 rounded shadow-lg hidden flex flex-col space-y-2 p-4 z-50">
+        <a href="information.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">INFORMĀCIJA</a>
+        <a href="contacts.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">KONTAKTI</a>
+        <a href="courses.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">RĪKI</a>
+        <a href="gallery.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">FOTO</a>
+      </div>
+    </div>
+
+    <div class="hidden xl:flex basis-2/3 flex justify-start gap-x-32">
+      <a href="information.html" class="hover:underline  dark:text-slate-200">INFORMĀCIJA</a>
+      <a href="contacts.html" class="hover:underline  dark:text-slate-200">KONTAKTI</a>
+      <a href="courses.html" class="hover:underline  dark:text-slate-200">RĪKI</a>
+      <a href="gallery.html" class="hover:underline  dark:text-slate-200">FOTO</a>
+    </div>
+
+    <button id="theme-toggle" class="absolute right-4 top-1/2 -translate-y-1/2 px-2 py-1 z-20">
+      <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-6 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+      </svg>
+
+      <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-6 hidden cursor-pointer dark:text-cyan-200">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+      </svg>
+    </button>
+
+  </nav>
+  <!-- Aligned content block -->
+  <div class="px-4 xl:px-16 xl:px-36 h-auto xl:h-[900px] justify-between gap-x-8 flex flex-col xl:flex-row items-start mt-6">
+    <div class="h-auto xl:h-full flex-1 flex flex-col justify-center mt-12 mb-12 xl:mb-0">
+      <p class="text-5xl xl:text-7xl font-bold dark:text-slate-300">Ieskaties</p>
+      <p class="text-4xl xl:text-6xl text-heading dark:text-gray-400">Latvijas Universitātē</p>
+    </div>
+    <div class="w-full xl:basis-2/3 flex justify-end">
+      <div id="hero-image" class="bg-cover rounded rounded-sm bg-center w-full h-[400px] xl:h-[900px] overflow-hidden relative"
+        style="background-image: url('./public/img/lu.png');">
+        <button onclick="alertMessage()"
+          class="absolute w-full xl:w-32 h-12 xl:w-64 xl:h-16 bottom-0 left-0 bg-white text-black dark:bg-cyan-800 hover:bg-gray-300 transition text-sm xl:text-base">
+          SKATĪT →
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mx-4 xl:mx-36 mt-8 xl:mt-42 mb-8 xl:mb-42 w-auto bg-gray-50 dark:bg-gray-800 h-auto xl:h-[500px]">
+    <div class="flex flex-col xl:flex-row mx-4 xl:mx-24 gap-4 xl:gap-x-4 h-full py-4 xl:py-0">
+      <div class="w-full xl:w-1/2 relative overflow-visible p-4 text-white order-2 xl:order-1">
+        <div class="grid grid-cols-2 xl:grid-cols-4 h-64 xl:h-full grid-rows-2 xl:grid-rows-4 gap-2 xl:gap-0">
+          <div class="row-span-1 xl:row-span-3 col-span-1 xl:col-span-2 xl:mr-8 overflow-hidden">
+            <img src="./public/img/image-02.jpg" alt="Image 02" class="w-full h-full object-cover"
+              data-light="./public/img/image-02.jpg" data-dark="./public/img/image-02-night.png">
+          </div>
+          <div class="row-start-2 xl:row-start-4 row-span-1 xl:row-span-2 xl:mr-8 col-span-1 xl:col-span-2 relative xl:-bottom-8 overflow-hidden">
+            <img src="./public/img/image-01.jpg" alt="Image 01" class="w-full h-full object-cover"
+              data-light="./public/img/image-01.jpg" data-dark="./public/img/image-01-night.png">
+          </div>
+          <div class="row-span-2 xl:row-span-4 col-span-1 xl:col-span-2 overflow-hidden">
+            <img src="./public/img/image-03.jpg" alt="Image 03" class="w-full h-full object-cover"
+              data-light="./public/img/image-03.jpg" data-dark="./public/img/image-03-night.png">
+          </div>
+        </div>
+      </div>
+      <div class="w-full xl:w-1/2 p-4 text-black relative order-1 xl:order-2">
+        <p class="text-3xl xl:text-5xl text-heading dark:text-slate-200 font-semibold">Informācija</p>
+        <p class="text-base xl:text-lg pt-4 xl:pt-8 pb-8 xl:pb-20 dark:text-gray-400">Uzsākot studijas pēc 12. klases absolvēšanas, daudzi cilvēki sastopas ar problēmām, jo akadēmiskā vide nav salīdzināma ar vidusskolu. Studiju temps ir ievērojami straujāks, mācību materiāli sarežģītāki, un no studentiem tiek sagaidīta lielāka patstāvība. Tieši šajā pārejas posmā būtiska loma ir digitālajiem rīkiem un resursiem, kas palīdz studentiem pielāgoties jaunajai videi un efektīvi organizēt savu mācību procesu. No pirmās dienas saskāros ar nepieciešamību izmantot dažādas tiešsaistes platformas – LU e-studiju sistēmu (Moodle), kurā atrodami visi studiju kursi, lekciju materiāli un iesniedzamie darbi, kā arī LU e-pastu un informatīvos portālus. Arvien biežāk lekcijas notiek tiešsaistē vai tiek ierakstītas, dodot iespēju mācīties sev ērtā laikā un vietā. Šī mājaslapa ir kā gids jaunajiem studentiem, lai palīdzētu ātrāk pielāgoties akademiskajai videi.</p>
+        <button onclick="alertMessage()"
+          class="relative xl:absolute bottom-0 xl:bottom-4 left-0 xl:left-4 w-full h-12 xl:w-64 xl:h-16 bg-white text-black hover:bg-gray-300 dark:bg-cyan-800 transition text-sm xl:text-base">
+          SKATĪT
+        </button>
+      </div>
+    </div>
+  </div>
+   <footer class="px-4 xl:px-36 py-4 xl:py-8">
+    <div class="text-center">
+      <p class="text-sm xl:text-base text-gray-600 dark:text-gray-400">
+        © 2025 Ričards Bubišs. Mana digitālā pieredze mācoties  Latvijas Universitātē. Visas tiesības aizsargātas.
+      </p>
+      <p class="text-xs xl:text-sm text-gray-500 dark:text-gray-500 mt-2">
+        Šī mājaslapa ir izveidota kā studiju projekts
+      </p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

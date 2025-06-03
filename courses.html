@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Kursi</title>
+</head>
+
+<body class="dark:bg-gray-900 font-roboto">
+ <nav class="px-4 xl:px-36 dark:bg-gray-700  flex h-auto xl:h-16 items-center justify-between relative z-10">
+    <div class="flex xl:basis-1/4">
+      <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
+      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" />
+    </div>
+    <div class="xl:hidden flex justify-center py-2 flex-1 mx-4 relative mr-12">
+      <button id="mobileMenuButton"
+        class="w-full px-4 py-2 text-black dark:text-slate-300 rounded dark:text-gray-700 dark:hover:text-gray-700 dark:hover:bg-slate-300 dark:hover:bg-slate-300 hover:bg-gray-200">
+        ☰ RĪKI 
+      </button>
+      <div id="mobileMenu"
+        class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 rounded shadow-lg hidden flex flex-col space-y-2 p-4 z-50">
+        <a href="index.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">SĀKUMS</a>
+        <a href="information.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">INFORMĀCIJA</a>
+        <a href="contacts.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">KONTAKTI</a>
+        <a href="gallery.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">FOTO</a>
+      </div>
+    </div>
+
+    <div class="hidden xl:flex basis-2/3 flex justify-start gap-x-32">
+      <a href="index.html" class="hover:underline  dark:text-slate-200">SĀKUMS</a>
+      <a href="information.html" class="hover:underline  dark:text-slate-200">INFORMĀCIJA</a>
+      <a href="contacts.html" class="hover:underline  dark:text-slate-200">KONTAKTI</a>
+      <a href="courses.html" class="hover:underline  dark:text-slate-200">RĪKI</a>
+      <a href="gallery.html" class="hover:underline  dark:text-slate-200">FOTO</a>
+    </div>
+
+    <button id="theme-toggle" class="absolute right-4 top-1/2 -translate-y-1/2 px-2 py-1 z-20">
+      <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-6 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+      </svg>
+
+      <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-6 hidden cursor-pointer dark:text-cyan-200">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+      </svg>
+    </button>
+
+  </nav>
+  <div class="px-4 xl:px-36 mb-8 xl:mb-42">
+    <div class="justify-start mt-12">
+      <p class="text-5xl font-extralight dark:text-gray-400 text-heading">Rīku</p>
+      <p class="text-5xl font-bold dark:text-slate-300">Apraksti</p>
+    </div>
+    <div class="flex flex-col xl:flex-row w-full bg-gray-100 dark:bg-gray-800 mt-12 overflow-hidden">
+      <!-- Image: 60% on desktop, full width on mobile -->
+      <div class="w-full xl:w-3/5">
+        <img src="./public/img/moodle.png" alt="Image" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Text: 40% on desktop, full width on mobile -->
+      <div class="w-full xl:w-2/5 p-6 flex flex-col relative">
+        <h2 class="text-3xl font-semibold font-extralight mb-2 text-heading dark:text-slate-300">Moodle</h2>
+        <p class="text-gray-700 py-5 dark:text-gray-400 text-lg pb-8 xl:pb-5">
+      <strong>Moodle</strong> ir Latvijas Universitātes galvenā e-studiju platforma, kas tiek izmantota mācību materiālu piekļuvei, uzdevumu izpildei un komunikācijai ar pasniedzējiem. Katram kursam ir sava vietne, kur studenti var atrast lekciju slaidus, lasāmos materiālus, video ierakstus, kā arī pildīt testus, augšupielādēt darbus un piedalīties forumos. 
+        </p>
+         <p class="text-gray-700 dark:text-gray-400 text-lg pb-20 xl:pb-5"><strong>Manā pieredzē:</strong> Moodle ir bijis kā virtuālais "studiju kabinets" – visa nepieciešamā informācija vienuviet. Viena no lielākajām priekšrocībām ir tas, ka var redzēt precīzus uzdevumu iesniegšanas termiņus un pasniedzēju komentārus.</p>
+        <button
+          onclick="alertMessage()"
+          class="absolute bottom-0 left-0 xl:bottom-6 xl:left-6 w-full xl:w-64 h-16 bg-white text-black hover:bg-gray-300 dark:bg-cyan-800 transition">
+          SKATĪT
+        </button>
+      </div>
+    </div>
+    <div class="flex flex-col xl:flex-row w-full bg-gray-100 dark:bg-gray-800 mt-8 xl:mt-36 mb-8 xl:mb-42 overflow-hidden">
+      <!-- Image: 60% on desktop, full width on mobile -->
+      <div class="w-full xl:w-3/5">
+        <img src="./public/img/luis.png" alt="Image" class="w-full h-auto object-cover">
+      </div>
+
+      <!-- Text: 40% on desktop, full width on mobile -->
+      <div class="w-full xl:w-2/5 p-6 flex flex-col relative">
+        <h2 class="text-3xl font-semibold font-extralight mb-2 text-heading dark:text-slate-300">LUIS</h2>
+        <p class="text-gray-700 py-5 dark:text-gray-400 text-lg pb-8 xl:pb-5">
+        <strong>LUIS</strong> ir oficiālā LU informācijas sistēma, kas tiek izmantota studiju administrēšanai. Tā ir vieta, kur students pārvalda visu, kas saistīts ar viņa studiju gaitu – no kursu izvēles līdz sekmēm un maksājumiem.
+        </p>
+         <p class="text-gray-700 dark:text-gray-400 text-lg pb-20 xl:pb-5"><strong>Manā pieredzē:</strong> LUIS ir kā "studenta profils", kur varu pārskatīt savu akadēmisko progresu un plānot turpmākās studijas. Lai arī sākumā šķita sarežģīts, ar laiku pieradu, un tagad tas ir neaizvietojams rīks studiju pārvaldībā.</p>
+        <button
+          onclick="alertMessage()"
+          class="absolute bottom-0 left-0 xl:bottom-6 xl:left-6 w-full xl:w-64 h-16 bg-white text-black hover:bg-gray-300 dark:bg-cyan-800 transition">
+          SKATĪT
+        </button>
+      </div>
+    </div>
+  </div>
+  <footer class="px-4 xl:px-36 py-4 xl:py-8">
+    <div class="text-center">
+      <p class="text-sm xl:text-base text-gray-600 dark:text-gray-400">
+        © 2025 Ričards Bubišs. Mana digitālā pieredze mācoties  Latvijas Universitātē. Visas tiesības aizsargātas.
+      </p>
+      <p class="text-xs xl:text-sm text-gray-500 dark:text-gray-500 mt-2">
+        Šī mājaslapa ir izveidota kā studiju projekts
+      </p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

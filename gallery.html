@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Foto</title>
+</head>
+
+<body class="dark:bg-gray-900 font-roboto">
+  <nav class="px-4 xl:px-36 dark:bg-gray-700  flex h-auto xl:h-16 items-center justify-between relative z-10">
+    <div class="flex xl:basis-1/4">
+      <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
+      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" />
+    </div>
+    <div class="xl:hidden flex justify-center py-2 flex-1 mx-4 relative mr-12">
+      <button id="mobileMenuButton"
+        class="w-full px-4 py-2 text-black dark:text-slate-300 rounded dark:text-gray-700 dark:hover:text-gray-700 dark:hover:bg-slate-300 dark:hover:bg-slate-300 hover:bg-gray-200">
+        ☰ FOTO 
+      </button>
+      <div id="mobileMenu"
+        class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 rounded shadow-lg hidden flex flex-col space-y-2 p-4 z-50">
+        <a href="index.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">SĀKUMS</a>
+        <a href="information.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">INFORMĀCIJA</a>
+        <a href="contacts.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">KONTAKTI</a>
+        <a href="courses.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">RĪKI</a>
+      </div>
+    </div>
+
+    <div class="hidden xl:flex basis-2/3 flex justify-start gap-x-32">
+      <a href="index.html" class="hover:underline  dark:text-slate-200">SĀKUMS</a>
+      <a href="information.html" class="hover:underline  dark:text-slate-200">INFORMĀCIJA</a>
+      <a href="contacts.html" class="hover:underline  dark:text-slate-200">KONTAKTI</a>
+      <a href="courses.html" class="hover:underline  dark:text-slate-200">RĪKI</a>
+      <a href="gallery.html" class="hover:underline  dark:text-slate-200">FOTO</a>
+    </div>
+
+    <button id="theme-toggle" class="absolute right-4 top-1/2 -translate-y-1/2 px-2 py-1 z-20">
+      <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-6 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+      </svg>
+
+      <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="size-6 hidden cursor-pointer dark:text-cyan-200">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+      </svg>
+    </button>
+
+  </nav>
+  <div class="px-4 xl:px-36 mb-8 xl:mb-42">
+    <div class="justify-start mt-12">
+      <p class="text-5xl font-extralight dark:text-gray-400 text-heading">Manas</p>
+      <p class="text-5xl font-bold dark:text-slate-300">Fotogrāfijas</p>
+    </div>
+
+
+    <p class="mt-12 text-base xl:text-lg dark:text-gray-400">Šīs fotogrāfijas atspoguļo manu ikdienu studiju procesā Latvijas Universitātē. Tajās redzamas gan klusās brīvdienu rīta stundas, kad, noguruma pārņemts, esmu iemidzis ar datoru blakus, gan enerģiskie mirkļi, kad kopā ar kursabiedriem strādājam pie grupu projektiem, visi saspiesti ap vienu ekrānu, spriežot un smejoties. Katrs kadrs atspoguļo kādu daļu no šīs pieredzes — no stresa eksāmenu laikā līdz gandarījumam par paveikto.</p>
+
+    <div class="grid grid-cols-2 xl:grid-cols-5 xl:grid-rows-2 gap-4 xl:gap-8 mt-12">
+      <img src="./public/img/1.JPG" alt="Image 1" class="w-full h-96 object-cover rounded-md shadow-sm">
+      <img src="./public/img/2.JPG" alt="Image 2" class="w-full h-96 object-cover rounded-md shadow-sm">
+      <img src="./public/img/3.JPG" alt="Image 3" class="w-full h-96 object-cover rounded-md shadow-sm">
+      <img src="./public/img/4.JPG" alt="Image 4" class="w-full h-96 object-cover rounded-md shadow-sm">
+      <div class="w-full h-auto object-cover rounded-md shadow-sm bg-[color:var(--color-heading)] dark:bg-slate-400"></div>
+       <div class="w-full h-auto object-cover rounded-md shadow-sm bg-[color:var(--color-heading)] dark:bg-slate-400"></div>
+      <img src="./public/img/5.JPG" alt="Image 7" class="w-full h-96 object-cover rounded-md shadow-sm">
+      <img src="./public/img/6.JPG" alt="Image 8" class="w-full h-96 object-cover rounded-md shadow-sm">
+      <img src="./public/img/7.JPG" alt="Image 9" class="w-full h-96 object-cover rounded-md shadow-sm">
+      <img src="./public/img/8.JPG" alt="Image 10" class="w-full h-96 object-cover rounded-md shadow-sm">
+    </div>
+    <div class="flex mt-12 mb-42 items-center">
+      <p class="text-xl pr-4 dark:text-slate-300">01</p>
+      <p class="text-xl pr-4">/</p>
+      <p class="text-xl text-gray-200 dark:text-gray-400 pr-4">01</p>
+      <div class="flex gap-x-4">
+        <button class="bg-gray-200 text-black h-12 px-4 py-2 hover:bg-gray-300 dark:bg-cyan-900 transition">
+          ←
+        </button>
+        <button class="bg-gray-200 text-black h-12 px-4 py-2 hover:bg-gray-300 dark:bg-cyan-900 transition">
+          →
+        </button>
+      </div>
+    </div>
+  </div>
+  <footer class="px-4 xl:px-36 py-4 xl:py-8">
+    <div class="text-center">
+      <p class="text-sm xl:text-base text-gray-600 dark:text-gray-400">
+        © 2025 Ričards Bubišs. Mana digitālā pieredze mācoties  Latvijas Universitātē. Visas tiesības aizsargātas.
+      </p>
+      <p class="text-xs xl:text-sm text-gray-500 dark:text-gray-500 mt-2">
+        Šī mājaslapa ir izveidota kā studiju projekts
+      </p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

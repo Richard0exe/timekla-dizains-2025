@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --font-roboto: "Roboto", "sans-serif";
+    --color-heading: #b5b5b5;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.text-heading {
+    color: var(--color-heading);
+}
+
+.dark .text-heading {
+    color: theme('colors.slate.400') !important;
+}
