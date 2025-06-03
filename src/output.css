@@ -1035,6 +1035,11 @@
       color: var(--color-slate-300);
     }
   }
+  .dark\:text-white {
+    &:where(.dark, .dark *) {
+      color: var(--color-white);
+    }
+  }
   .dark\:invert {
     &:where(.dark, .dark *) {
       --tw-invert: invert(100%);
