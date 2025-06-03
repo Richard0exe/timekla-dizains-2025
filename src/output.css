@@ -966,6 +966,11 @@
       background-color: var(--color-cyan-900);
     }
   }
+  .dark\:bg-gray-400 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-gray-400);
+    }
+  }
   .dark\:bg-gray-700 {
     &:where(.dark, .dark *) {
       background-color: var(--color-gray-700);
