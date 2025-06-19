@@ -14,8 +14,8 @@
 <body class="dark:bg-gray-900 font-roboto">
   <nav class="px-4 xl:px-36 dark:bg-gray-700  flex h-auto xl:h-16 items-center justify-between relative z-10">
     <div class="flex xl:basis-1/4">
-      <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
-      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" />
+      <!-- <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
+      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" /> -->
     </div>
     <div class="xl:hidden flex justify-center py-2 flex-1 mx-4 relative mr-12">
       <button id="mobileMenuButton"
@@ -25,6 +25,7 @@
       <div id="mobileMenu"
         class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 rounded shadow-lg hidden flex flex-col space-y-2 p-4 z-50">
         <a href="information.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">INFORMĀCIJA</a>
+        <a href="studies.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">STUDIJAS</a>
         <a href="contacts.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">KONTAKTI</a>
         <a href="courses.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">RĪKI</a>
         <a href="gallery.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">FOTO</a>
@@ -33,6 +34,7 @@
 
     <div class="hidden xl:flex basis-2/3 flex justify-start gap-x-32">
       <a href="information.html" class="hover:underline  dark:text-slate-200">INFORMĀCIJA</a>
+      <a href="studies.html" class="hover:underline  dark:text-slate-200">STUDIJAS</a>
       <a href="contacts.html" class="hover:underline  dark:text-slate-200">KONTAKTI</a>
       <a href="courses.html" class="hover:underline  dark:text-slate-200">RĪKI</a>
       <a href="gallery.html" class="hover:underline  dark:text-slate-200">FOTO</a>
@@ -62,8 +64,8 @@
     <div class="w-full xl:basis-2/3 flex justify-end">
       <div id="hero-image" class="bg-cover rounded rounded-sm bg-center w-full h-[400px] xl:h-[900px] overflow-hidden relative"
         style="background-image: url('./public/img/lu.png');">
-        <button onclick="alertMessage()"
-          class="absolute w-full xl:w-32 h-12 xl:w-64 xl:h-16 bottom-0 left-0 bg-white text-black dark:bg-cyan-800 hover:bg-gray-300 transition text-sm xl:text-base">
+        <button onclick="redirectToGalleryPage()"
+          class="absolute w-full xl:w-32 h-12 xl:w-64 xl:h-16 bottom-0 left-0 bg-white text-black dark:bg-slate-300 dark:hover:bg-gray-400 hover:bg-gray-300 transition text-sm xl:text-base">
           SKATĪT →
         </button>
       </div>
@@ -90,9 +92,9 @@
       <div class="w-full xl:w-1/2 p-4 text-black relative order-1 xl:order-2">
         <p class="text-3xl xl:text-5xl text-heading dark:text-slate-200 font-semibold">Informācija</p>
         <p class="text-base xl:text-lg pt-4 xl:pt-8 pb-8 xl:pb-20 dark:text-gray-400">Uzsākot studijas pēc 12. klases absolvēšanas, daudzi cilvēki sastopas ar problēmām, jo akadēmiskā vide nav salīdzināma ar vidusskolu. Studiju temps ir ievērojami straujāks, mācību materiāli sarežģītāki, un no studentiem tiek sagaidīta lielāka patstāvība. Tieši šajā pārejas posmā būtiska loma ir digitālajiem rīkiem un resursiem, kas palīdz studentiem pielāgoties jaunajai videi un efektīvi organizēt savu mācību procesu. No pirmās dienas saskāros ar nepieciešamību izmantot dažādas tiešsaistes platformas – LU e-studiju sistēmu (Moodle), kurā atrodami visi studiju kursi, lekciju materiāli un iesniedzamie darbi, kā arī LU e-pastu un informatīvos portālus. Arvien biežāk lekcijas notiek tiešsaistē vai tiek ierakstītas, dodot iespēju mācīties sev ērtā laikā un vietā. Šī mājaslapa ir kā gids jaunajiem studentiem, lai palīdzētu ātrāk pielāgoties akademiskajai videi.</p>
-        <button onclick="alertMessage()"
-          class="relative xl:absolute bottom-0 xl:bottom-4 left-0 xl:left-4 w-full h-12 xl:w-64 xl:h-16 bg-white text-black hover:bg-gray-300 dark:bg-cyan-800 transition text-sm xl:text-base">
-          SKATĪT
+        <button onclick="redirectToInformationPage()"
+          class="relative xl:absolute bottom-0 xl:bottom-4 left-0 xl:left-4 w-full h-12 xl:w-64 xl:h-16 bg-white text-black hover:bg-gray-300 dark:hover:bg-gray-400 dark:bg-slate-300 transition text-sm xl:text-base">
+          SKATĪT →
         </button>
       </div>
     </div>

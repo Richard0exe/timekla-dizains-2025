@@ -8,12 +8,21 @@ function alertMessage() {
   alert("Poga uzspiesta!");
 }
 
-  const button = document.getElementById('mobileMenuButton');
-  const menu = document.getElementById('mobileMenu');
+const button = document.getElementById('mobileMenuButton');
+const menu = document.getElementById('mobileMenu');
 
-  button.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+function redirectToInformationPage() {
+  // Replace 'information.html' with your actual information page URL or path.
+  window.location.href = 'information.html';
+}
+
+function redirectToGalleryPage() {
+  window.location.href = 'gallery.html'
+}
 
 function setInitialTheme() {
   const savedTheme = localStorage.getItem('theme');
@@ -31,31 +40,31 @@ function setInitialTheme() {
 
 setInitialTheme(); // Run on load
 
-// Function to update hero image based on theme
-function updateHeroImage() {
-  const heroImage = document.getElementById('hero-image');
-  const isDarkMode = document.documentElement.classList.contains('dark');
-  
-  if (isDarkMode) {
-    heroImage.style.backgroundImage = "url('./public/img/lu-night.png')";
-  } else {
-    heroImage.style.backgroundImage = "url('./public/img/lu.png')";
-  }
-}
+// // Function to update hero image based on theme
+// function updateHeroImage() {
+//   const heroImage = document.getElementById('hero-image');
+//   const isDarkMode = document.documentElement.classList.contains('dark');
 
-// Function to update gallery images based on theme
-function updateGalleryImages() {
-  const images = document.querySelectorAll('img[data-light][data-dark]');
-  const isDarkMode = document.documentElement.classList.contains('dark');
-  
-  images.forEach(img => {
-    if (isDarkMode) {
-      img.src = img.getAttribute('data-dark');
-    } else {
-      img.src = img.getAttribute('data-light');
-    }
-  });
-}
+//   if (isDarkMode) {
+//     heroImage.style.backgroundImage = "url('./public/img/lu-night.png')";
+//   } else {
+//     heroImage.style.backgroundImage = "url('./public/img/lu.png')";
+//   }
+// }
+
+// // Function to update gallery images based on theme
+// function updateGalleryImages() {
+//   const images = document.querySelectorAll('img[data-light][data-dark]');
+//   const isDarkMode = document.documentElement.classList.contains('dark');
+
+//   images.forEach(img => {
+//     if (isDarkMode) {
+//       img.src = img.getAttribute('data-dark');
+//     } else {
+//       img.src = img.getAttribute('data-light');
+//     }
+//   });
+// }
 
 // Toggle theme on click
 themeToggle.addEventListener('click', () => {
@@ -74,7 +83,7 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Call on page load to set correct images
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   updateHeroImage();
   updateGalleryImages();
 });

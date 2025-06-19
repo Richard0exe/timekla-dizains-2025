@@ -14,8 +14,8 @@
 <body class="dark:bg-gray-900 font-roboto">
  <nav class="px-4 xl:px-36 dark:bg-gray-700  flex h-auto xl:h-16 items-center justify-between relative z-10">
     <div class="flex xl:basis-1/4">
-      <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
-      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" />
+      <!-- <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
+      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" /> -->
     </div>
     <div class="xl:hidden flex justify-center py-2 flex-1 mx-4 relative mr-12">
       <button id="mobileMenuButton"
@@ -26,6 +26,7 @@
         class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 rounded shadow-lg hidden flex flex-col space-y-2 p-4 z-50">
         <a href="index.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">SĀKUMS</a>
         <a href="information.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">INFORMĀCIJA</a>
+        <a href="studies.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">STUDIJAS</a>
         <a href="contacts.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">KONTAKTI</a>
         <a href="gallery.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">FOTO</a>
       </div>
@@ -34,6 +35,7 @@
     <div class="hidden xl:flex basis-2/3 flex justify-start gap-x-32">
       <a href="index.html" class="hover:underline  dark:text-slate-200">SĀKUMS</a>
       <a href="information.html" class="hover:underline  dark:text-slate-200">INFORMĀCIJA</a>
+      <a href="studies.html" class="hover:underline  dark:text-slate-200">STUDIJAS</a>
       <a href="contacts.html" class="hover:underline  dark:text-slate-200">KONTAKTI</a>
       <a href="courses.html" class="hover:underline  dark:text-slate-200">RĪKI</a>
       <a href="gallery.html" class="hover:underline  dark:text-slate-200">FOTO</a>
@@ -68,15 +70,12 @@
       <!-- Text: 40% on desktop, full width on mobile -->
       <div class="w-full xl:w-2/5 p-6 flex flex-col relative">
         <h2 class="text-3xl font-semibold font-extralight mb-2 text-heading dark:text-slate-300">Moodle</h2>
-        <p class="text-gray-700 py-5 dark:text-gray-400 text-lg pb-8 xl:pb-5">
-      <strong>Moodle</strong> ir Latvijas Universitātes galvenā e-studiju platforma, kas tiek izmantota mācību materiālu piekļuvei, uzdevumu izpildei un komunikācijai ar pasniedzējiem. Katram kursam ir sava vietne, kur studenti var atrast lekciju slaidus, lasāmos materiālus, video ierakstus, kā arī pildīt testus, augšupielādēt darbus un piedalīties forumos. 
-        </p>
-         <p class="text-gray-700 dark:text-gray-400 text-lg pb-20 xl:pb-5"><strong>Manā pieredzē:</strong> Moodle ir bijis kā virtuālais "studiju kabinets" – visa nepieciešamā informācija vienuviet. Viena no lielākajām priekšrocībām ir tas, ka var redzēt precīzus uzdevumu iesniegšanas termiņus un pasniedzēju komentārus.</p>
-        <button
+         <p class="text-gray-700 dark:text-gray-400 text-lg pb-20 xl:pb-5"><strong>Manā pieredzē:</strong> Moodle ir bijis kā virtuālais "studiju kabinets" – visa nepieciešamā informācija vienuviet. Viena no lielākajām priekšrocībām ir tas, ka var redzēt precīzus uzdevumu iesniegšanas termiņus un pasniedzēju komentārus. Nedrīkst paļauties uz automātiskajiem paziņojumiem, ko sūta Moodle, jo bieži sanāk tā, ka tie neatnāk. Drošāk pašam ik pa laikam pārbaudīt visus jaunumus kursos pašam. Rakstīt pasniedzējiem, izmantojot iebūvēto funkcionalitāti labāk nevajag, jo daudziem pasniedzējiem ir 50+ neapskatītas ziņas, tāpēc jūsu var tikt noignorēta. Labāk pajautāt pasniedzēja ē-pastu un uzrakstīt ziņu uz to, daudzi atbildēs pat tajā pašā dienā, kurā tika rakstīta ziņa. Vēl viens moments, ko būtu vērts pieminēt ir aprēķinātais kursa gala vērtējums, daudzviet tā aprēķina formula ir nepareiza, tāpēc E-studijās rādītais vertējums var nesakrist ar faktisko. Iesaku pārbaudīt kursā sniegto vērtējuma aprēķina formulu un aprēķināt savu gala vērtējumu pašam.</p>
+        <!-- <button
           onclick="alertMessage()"
           class="absolute bottom-0 left-0 xl:bottom-6 xl:left-6 w-full xl:w-64 h-16 bg-white text-black hover:bg-gray-300 dark:bg-cyan-800 transition">
           SKATĪT
-        </button>
+        </button> -->
       </div>
     </div>
     <div class="flex flex-col xl:flex-row w-full bg-gray-100 dark:bg-gray-800 mt-8 xl:mt-36 mb-8 xl:mb-42 overflow-hidden">
@@ -87,16 +86,13 @@
 
       <!-- Text: 40% on desktop, full width on mobile -->
       <div class="w-full xl:w-2/5 p-6 flex flex-col relative">
-        <h2 class="text-3xl font-semibold font-extralight mb-2 text-heading dark:text-slate-300">LUIS</h2>
-        <p class="text-gray-700 py-5 dark:text-gray-400 text-lg pb-8 xl:pb-5">
-        <strong>LUIS</strong> ir oficiālā LU informācijas sistēma, kas tiek izmantota studiju administrēšanai. Tā ir vieta, kur students pārvalda visu, kas saistīts ar viņa studiju gaitu – no kursu izvēles līdz sekmēm un maksājumiem.
-        </p>
-         <p class="text-gray-700 dark:text-gray-400 text-lg pb-20 xl:pb-5"><strong>Manā pieredzē:</strong> LUIS ir kā "studenta profils", kur varu pārskatīt savu akadēmisko progresu un plānot turpmākās studijas. Lai arī sākumā šķita sarežģīts, ar laiku pieradu, un tagad tas ir neaizvietojams rīks studiju pārvaldībā.</p>
-        <button
+        <h2 class="text-3xl font-semibold font-extralight mb-2 text-heading dark:text-slate-300">Latvijas Universitātes Informācijas Sistēma</h2>
+         <p class="text-gray-700 dark:text-gray-400 text-lg pb-20 xl:pb-5"><strong>Manā pieredzē:</strong> LUIS ir kā "studenta profils", kur varu pārskatīt savu akadēmisko progresu un plānot turpmākās studijas. Lai arī sākumā šķita sarežģīts, ar laiku pieradu, un tagad tas ir neaizvietojams rīks studiju pārvaldībā. Gribētos atgādināt, ka studentiem ir pieejama sabiedriskā transporta atlaide, kuru jāpiesaka caur LUIS sistēmu, bet iesaku to darīt savlaicīgi, jo apstrādes process Rīgas satiksmei var aizņemt līdz pat mēnesim. Vēl viena nepieciešamā lieta, kas jāzina, ir stipendija, to arī jāpiesaka caur šo sistēmu. Pirms katra semestra sākuma būs pieejams reģisrēties studentu stipendijai, lai to izdarīt ir jāuzspiež viena poga. Jāuzsver arī, ka caur LUIS var pieteikties uz izvēles kursiem, kas ir viens no svarīgākajiem posmiem katra semestra sākumā. Šis process notiek noteiktā laikā, un, ja to palaid garām, var gadīties palikt bez kāda interesanta vai nepieciešama kursa. Tāpēc esmu iemācījies sekot līdzi LU mājaslapas un LUIS ziņojumiem, lai neko nepalaistu garām.</p>
+        <!-- <button
           onclick="alertMessage()"
           class="absolute bottom-0 left-0 xl:bottom-6 xl:left-6 w-full xl:w-64 h-16 bg-white text-black hover:bg-gray-300 dark:bg-cyan-800 transition">
           SKATĪT
-        </button>
+        </button> -->
       </div>
     </div>
   </div>

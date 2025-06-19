@@ -14,8 +14,8 @@
 <body class="dark:bg-gray-900 font-roboto">
   <nav class="px-4 xl:px-36 dark:bg-gray-700  flex h-auto xl:h-16 items-center justify-between relative z-10">
     <div class="flex xl:basis-1/4">
-      <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
-      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" />
+      <!-- <img src="./public/img/logo.png" alt="Latvijas Universitāte Logo" class="hidden xl:block h-18 w-auto dark:invert">
+      <img src="./public/img/logo-vert.png" alt="LU vertikāls" class="block xl:hidden py-2 h-20 w-auto dark:invert" /> -->
     </div>
     <div class="xl:hidden flex justify-center py-2 flex-1 mx-4 relative mr-12">
       <button id="mobileMenuButton"
@@ -25,6 +25,7 @@
       <div id="mobileMenu"
         class="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 rounded shadow-lg hidden flex flex-col space-y-2 p-4 z-50">
         <a href="index.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">SĀKUMS</a>
+        <a href="studies.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">STUDIJAS</a>
         <a href="contacts.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">KONTAKTI</a>
         <a href="courses.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">RĪKI</a>
         <a href="gallery.html" class="rounded px-4 py-3 hover:bg-gray-200 dark:hover:text-gray-700 dark:hover:bg-slate-300 hover:underline dark:text-slate-200">FOTO</a>
@@ -34,6 +35,7 @@
     <div class="hidden xl:flex basis-2/3 flex justify-start gap-x-32">
       <a href="index.html" class="hover:underline  dark:text-slate-200">SĀKUMS</a>
       <a href="information.html" class="hover:underline  dark:text-slate-200">INFORMĀCIJA</a>
+      <a href="studies.html" class="hover:underline  dark:text-slate-200">STUDIJAS</a>
       <a href="contacts.html" class="hover:underline  dark:text-slate-200">KONTAKTI</a>
       <a href="courses.html" class="hover:underline  dark:text-slate-200">RĪKI</a>
       <a href="gallery.html" class="hover:underline  dark:text-slate-200">FOTO</a>
@@ -59,22 +61,26 @@
       <p class="text-5xl text-heading dark:text-gray-400 font-extralight">Vispārējā</p>
       <p class="text-5xl font-bold dark:text-slate-300">Informācija</p>
     </div>
-    <div class=" mt-12 p-8 bg-gray-100 dark:bg-gray-800 h-auto">
+    <img class="pt-12 h-[250px] w-full object-cover" src="./public/img/info.jpg">
+    <div class="p-8 bg-gray-100 dark:bg-gray-800 h-auto">
       <p class="text-5xl font-bold text-heading dark:text-slate-200">Informācija</p>
       <p class="text-lg text-black dark:text-gray-400 pt-5">Mana digitālā pieredze ir cieši saistīta ar Latvijas Universitātes Datorikas fakultāti, kas šobrīd darbojas kā Datorikas nodaļa Eksakto zinātņu un tehnoloģiju fakultātes sastāvā. Studiju virziens ir cieši saistīts ar tehnoloģijām, tāpēc nav pārsteigums, ka liela daļa studiju procesa notiek digitālajā vidē. Lekcijas, semināri un saziņa ar pasniedzējiem pārsvarā notiek, izmantojot digitālos rīkus.</p>
     </div>
+    <p class="text-4xl font-bold mt-12">BIEŽĀK UZDOTIE JAUTĀJUMI</p>
     <div class="flex flex-col xl:flex-row gap-4 xl:gap-x-8 mt-12 mb-8 xl:mb-42">
       <div class="w-full xl:w-1/3 bg-gray-100 dark:bg-gray-800 p-8">
-        <p class="text-4xl font-extralight pb-4 text-heading dark:text-slate-200 font-semibold">Microsoft Teams</p>
-        <p class="text-lg dark:text-gray-400 ">Paredzēts tiešsaistes lekcijām, grupu darbam un saziņai ar pasniedzējiem. Platforma ļauj piedalīties attālinātajās nodarbībās, dalīties ar ekrānu, augšupielādēt failus un pārskatīt ierakstus.</p>
+        <p class="text-4xl font-extralight pb-4 text-heading dark:text-slate-200 font-semibold">Kur tu guvi aktuālāko studiju informāciju?</p>
+        <p class="text-lg dark:text-gray-400 ">
+          Par studiju informāciju parasti rūpējas Studiju Pašpārvalde (SP), viņi publicē pēdējās ziņas savos Discord un Whatsapp kanālos. Pārliecinies, ka tu esi pievienots tiem vai paprasi, lai tevi pievieno.
+        </p>
       </div>
       <div class="w-full xl:w-1/3 bg-gray-100 dark:bg-gray-800 p-8">
-        <p class="text-4xl font-extralight pb-4 text-heading dark:text-slate-200 font-semibold">E-Studijas (Moodle)</p>
-        <p class="text-lg dark:text-gray-400">Galvenā e-studiju vide, kurā atrodami mācību materiāli, uzdevumi, pārbaudes darbi un forumi. Katra kursa saturs ir pieejams skaidri strukturēts, un studenti var sekot līdzi termiņiem. Ir pieejama failu glabātuve, kur var glabāt failus mākonī ar iespēju piekļūt no jebkura datora.</p>
+        <p class="text-4xl font-extralight pb-4 text-heading dark:text-slate-200 font-semibold">Kur tu meklēji informāciju par auditorijām?</p>
+        <p class="text-lg dark:text-gray-400">Informāciju par kabinetiem un auditorijām parasti norāda blakus pie studiju kursiem LUIS sistēmā. Lai atrast vajadzīgo telpu, universitātē 3.stāvā uz tāfeles ir pielīmēta karte, kas palīdzēs orientēties. To var atrast tiešsaistē Discord vai Whatsapp grupā.</p>
       </div>
       <div class="w-full xl:w-1/3 bg-gray-100 dark:bg-gray-800 p-8">
-        <p class="text-4xl font-extralight pb-4 text-heading dark:text-slate-200 font-semibold">LUIS</p>
-        <p class="text-lg dark:text-gray-400">Studiju pārvaldības sistēma, kurā notiek reģistrēšanās kursiem, sekmju pārbaude, informācijas saņemšana par studiju norisi un administratīviem jautājumiem. Šeit var apskatīt savus dokumentus, līgumus, pieteities budžeta stipendijai. Neliels atgādinājums, OBLIGĀTI jaaizpilda kursa aptaujas, jo bez tām pasniedzējs nevarēs izlikt kursa vērtējumu.</p>
+        <p class="text-4xl font-extralight pb-4 text-heading dark:text-slate-200 font-semibold">Kā efektīvi pārvaldīt savu laiku studiju procesā?</p>
+        <p class="text-lg dark:text-gray-400">Iesaku pildīt visus darbus uzreiz pēc to uzdošanas, lai vēlāk veltīt laiku savām interesēm un darbiem. Noteikti ierīkot digitālo kalendāru, kur atzīmēt ieplānotos/izpildītos darbus un vajadzīgo laika periodu to izpildei. Skatīt E-studijās pieejamo kalendāru, lai nenokavēt kāda darbiņa nodošanas termiņu.</p>
       </div>
     </div>
   </div>
